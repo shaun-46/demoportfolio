@@ -1,0 +1,209 @@
+/* <*-Universal Selector> */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* navbar section */
+.navbar{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgb(202, 201, 201);
+position: sticky;
+top: 0;
+}
+
+/* navbar ul section */
+.navbar ul{
+    display: flex;
+    margin: 30px;
+    list-style: none;
+}
+
+/* navbar ul li section */
+.navbar ul li{
+    font-size: 20px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    padding: 50px;
+    color: black;
+}
+
+.navbar ul li a:hover{
+    color: whitesmoke;
+    text-shadow: 4px 8px 8px black;
+}
+
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 850px;
+    color: black;
+    background-color: rgba(112, 112, 250, 0);
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background-image: url('https://www.teahub.io/photos/full/108-1089764_style-man-pic-hd.jpg');
+    height: 850px;
+    width: 100%;
+    background-size:cover;
+    z-index: -1;
+}
+
+.main{
+    position: absolute;
+    display: block;
+    flex-direction: column;
+    left: 20%;
+    top: 30%;
+    border: 2px solid white;
+    padding: 30px;
+}
+
+.heading{
+    margin: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.btn{
+    background-color: transparent;
+    padding: 10px 40px;
+    transition: .6s;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+}
+
+/* about */
+
+#about{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+#pic{
+    display: flex;
+}
+
+/* #pic img{
+    width: 575px;
+    height:400px
+} */
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 20px;
+}
+
+#intro h2{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#project{
+    display: flex;
+    flex-direction: column;
+    background-color:  rgb(95, 160, 197);
+    align-items: center;
+    padding: 20px;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery img{
+    width: 360px;
+    height: 250px;
+    margin: 10px;
+}
+
+.gallery img:hover{
+    width: 370px;
+    transition: .6s;
+    border-radius: 50px;
+}
+
+#services{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.row{
+    display: flex;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 450px;
+    border: 1px solid blue;
+    margin: 10px;
+    padding: 20px;
+    text-align: justify;
+    border-radius: 40px;
+
+    background: linear-gradient(to top,rgb(95, 160, 197) 50%,white 50%);
+    background-size: 100% 200%;
+    transition: all .5s;
+}
+
+.box:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px rgb(95, 160, 197);
+}
+
+.box img{
+    width: 250px;
+    height: 250px;
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(95, 160, 197);
+    
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+
+}
+
+.input{
+    margin: 5px;
+    padding: 10px ;
+}
+
+#send{
+    margin: 5px;
+    padding: 10px;
+}
+
+#send:hover{
+    background-color: rgb(95, 160, 197);
+    color: azure;
+}
